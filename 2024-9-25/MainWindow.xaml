@@ -5,8 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2024_9_25"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="928" Width="876">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="332*"/>
+            <ColumnDefinition Width="545*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="53,0,0,389" Background="#FFC6EFC5" Height="500" VerticalAlignment="Bottom" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="543">
+            <StackPanel Height="81" Orientation="Horizontal">
+                <Label Content="F-16戰隼" Background="{x:Null}" FontSize="24" VerticalContentAlignment="Center" Width="152" HorizontalContentAlignment="Center" Foreground="#FFC53B3B" FontWeight="Bold"/>
+                <Label Content="120億美元" Width="238" Background="{x:Null}" FontSize="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="#FFB12CD0" FontWeight="Bold"/>
+                <TextBox x:Name="F_16" TextWrapping="Wrap" Width="120" Height="45" TextChanged="TextBox_TextChanged" Text="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontSize="22" FontWeight="Bold" Padding="0,0,10,0"/>
+            </StackPanel>
+            <StackPanel Height="81" Orientation="Horizontal">
+                <Label Content="F-15鷹" Background="{x:Null}" FontSize="24" VerticalContentAlignment="Center" Width="152" HorizontalContentAlignment="Center" Foreground="#FFC53B3B" FontWeight="Bold"/>
+                <Label Content="480億美元" Width="238" Background="{x:Null}" FontSize="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="#FFB12CD0" FontWeight="Bold"/>
+                <TextBox x:Name="F_1" TextWrapping="Wrap" Width="120" Height="45" TextChanged="TextBox_TextChanged" Text="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontSize="22" FontWeight="Bold" Padding="0,0,10,0"/>
+            </StackPanel>
+            <StackPanel Height="81" Orientation="Horizontal">
+                <Label Content="F-22" Background="{x:Null}" FontSize="24" VerticalContentAlignment="Center" Width="152" HorizontalContentAlignment="Center" Foreground="#FFC53B3B" FontWeight="Bold"/>
+                <Label Content="2000億美元" Width="238" Background="{x:Null}" FontSize="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="#FFB12CD0" FontWeight="Bold"/>
+                <TextBox x:Name="F_2" TextWrapping="Wrap" Width="120" Height="45" TextChanged="TextBox_TextChanged" Text="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontSize="22" FontWeight="Bold" Padding="0,0,10,0"/>
+            </StackPanel>
+            <StackPanel Height="81" Orientation="Horizontal">
+                <Label Content="F-35A戰隼" Background="{x:Null}" FontSize="24" VerticalContentAlignment="Center" Width="152" HorizontalContentAlignment="Center" Foreground="#FFC53B3B" FontWeight="Bold"/>
+                <Label Content="520億美元" Width="238" Background="{x:Null}" FontSize="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="#FFB12CD0" FontWeight="Bold"/>
+                <TextBox x:Name="F_3" TextWrapping="Wrap" Width="120" Height="45" TextChanged="TextBox_TextChanged" Text="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontSize="22" FontWeight="Bold" Padding="0,0,10,0"/>
+            </StackPanel>
+            <StackPanel Height="81" Orientation="Horizontal">
+                <Label Content="F-35B戰隼" Background="{x:Null}" FontSize="24" VerticalContentAlignment="Center" Width="152" HorizontalContentAlignment="Center" Foreground="#FFC53B3B" FontWeight="Bold"/>
+                <Label Content="620億美元" Width="238" Background="{x:Null}" FontSize="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="#FFB12CD0" FontWeight="Bold"/>
+                <TextBox x:Name="F_4" TextWrapping="Wrap" Width="120" Height="45" TextChanged="TextBox_TextChanged" Text="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontSize="22" FontWeight="Bold" Padding="0,0,10,0"/>
+            </StackPanel>
+            <StackPanel Height="81" Orientation="Horizontal">
+                <Label Content="F-35C戰隼" Background="{x:Null}" FontSize="24" VerticalContentAlignment="Center" Width="152" HorizontalContentAlignment="Center" Foreground="#FFC53B3B" FontWeight="Bold"/>
+                <Label Content="560億美元" Width="238" Background="{x:Null}" FontSize="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="#FFB12CD0" FontWeight="Bold"/>
+                <TextBox x:Name="F_5" TextWrapping="Wrap" Width="120" Height="45" TextChanged="TextBox_TextChanged" Text="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontSize="22" FontWeight="Bold" Padding="0,0,10,0"/>
+            </StackPanel>
+
+
+        </StackPanel>
+        <Button x:Name="order_button" Content="確定訂購" Margin="0,29,55,0" FontSize="22" Background="#FF8B9FEF" HorizontalAlignment="Right" Width="131" Height="114" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBlock Margin="59,0,0,51" TextWrapping="Wrap" Text="TextBlock" Background="#FFEFEDAC" Height="283" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="758" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>
